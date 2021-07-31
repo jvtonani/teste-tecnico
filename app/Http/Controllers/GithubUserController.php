@@ -24,8 +24,14 @@ class GithubUserController extends Controller
 
     public function newGithubUser(Request $username){
 
+        //Check if input is blank
+        if (is_null($username->githubUserName)){
+            return redirect()->route('github.userlist');
+        }
+
         $response = $this->consumingGithubApi($username->githubUserName);
 
+        //If user don't exist
         if ($response == false){
             return redirect()->route('github.userlist');
         }
