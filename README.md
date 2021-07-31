@@ -13,7 +13,7 @@ The user should first register and then login. Navigation is placed and done usi
 * `php artisan serve` to start the app on http://localhost:8000/
 
 
-![Login](images/login)
-![Home](images/home)
-![Listing User](images/listuser)
-![User Detail](images/listdetail)
+![Login](https://github.com/jvtonani/teste-tecnico/blob/main/images/login.png?raw=true)
+![Home](https://github.com/jvtonani/teste-tecnico/blob/main/images/home.png?raw=true)
+![Listing User](https://github.com/jvtonani/teste-tecnico/blob/main/images/listuser.png?raw=true)
+![User Detail](https://github.com/jvtonani/teste-tecnico/blob/main/images/userdetail.png?raw=true)
