@@ -16,4 +16,4 @@ The user should first register and then login. Navigation is placed and done usi
 ![Login](https://github.com/jvtonani/teste-tecnico/blob/main/images/login.png?raw=true)
 ![Home](https://github.com/jvtonani/teste-tecnico/blob/main/images/home.png?raw=true)
 ![Listing User](https://github.com/jvtonani/teste-tecnico/blob/main/images/listuser.png?raw=true)
-![User Detail](https://github.com/jvtonani/teste-tecnico/blob/main/images/userdetail.png?raw=true)
+![User Detail](https://github.com/jvtonani/teste-tecnico/blob/main/images/userdetails.png?raw=true)
