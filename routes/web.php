@@ -21,12 +21,12 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->middleware('auth')->name('home');
 
-Route::get('/github-user-list', [App\Http\Controllers\GithubUserController::class, 'listGithubUser'])->name('github.userlist');
+Route::get('/github-user-list', [App\Http\Controllers\GithubUserController::class, 'listGithubUser'])->middleware('auth')->name('github.userlist');
 
-Route::post('/github-user-list/new-github-user', [App\Http\Controllers\GithubUserController::class, 'newGithubUser'])->name('github.newuser');
+Route::post('/github-user-list/new-github-user', [App\Http\Controllers\GithubUserController::class, 'newGithubUser'])->middleware('auth')->name('github.newuser');
 
-Route::get('/github-user-list/delete-github-user/{id}', [App\Http\Controllers\GithubUserController::class, 'deleteGithubUser'])->name('github.deleteuser');
+Route::get('/github-user-list/delete-github-user/{id}', [App\Http\Controllers\GithubUserController::class, 'deleteGithubUser'])->middleware('auth')->name('github.deleteuser');
 
-Route::get('/{username}', [App\Http\Controllers\GithubUserController::class, 'listUserInfo'])->name('user.info');
+Route::get('/{username}', [App\Http\Controllers\GithubUserController::class, 'listUserInfo'])->middleware('auth')->name('user.info');
